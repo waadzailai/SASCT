@@ -1,0 +1,201 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ecf5"
+    tools:context=".SittingActivity">
+
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E9EDF6"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_appbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="Option"
+            android:textStyle="bold"
+            android:textColor="#154278"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Notifications"
+                android:textColor="#b9c7d7"
+                android:textSize="16dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_button_background2"
+                android:textColorHint="#DC8C44"
+                android:textColorLink="#DC8C44"
+                android:thumbTint="#FFFFFF"
+                android:trackTint="#E9EDF6" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Theme Mode"
+                android:textColor="#b9c7d7"
+                android:textSize="16dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_button_background2"
+                android:textColorHint="#DC8C44"
+                android:textColorLink="#DC8C44"
+                android:thumbTint="#FFFFFF"
+                android:trackTint="#E9EDF6" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="Account"
+            android:textStyle="bold"
+            android:textColor="#154278"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Country"
+                android:textColor="#b9c7d7"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/spinner_country"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Language"
+                android:textColor="#b9c7d7"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/spinner_Language"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="General"
+            android:textStyle="bold"
+            android:textColor="#154278"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="Security"
+            android:textColor="#b9c7d7"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="Privasy"
+            android:textColor="#b9c7d7"
+            android:textSize="16dp" />
+
+
+
+    </LinearLayout>
+
+
+
+    <!-- Navigation Bar -->
+
+</RelativeLayout>

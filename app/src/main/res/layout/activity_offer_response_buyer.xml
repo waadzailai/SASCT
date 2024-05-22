@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9EDF6"
+    tools:context=".OfferResponseBuyerActivity">
+    <include layout="@layout/layout_appbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- User Details Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/userImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:clipToOutline="true"
+                    android:src="@drawable/background_brouduct"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/companyNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company: "
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#d1d9e5" />
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title: "
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/descriptionView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:background="@drawable/background_textview"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/categoryView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category: "
+                android:background="@drawable/background_textview"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/shipmentView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipment: "
+                android:background="@drawable/background_textview"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#d1d9e5" />
+            <ImageView
+                android:id="@+id/offerImageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/background_brouduct"/>
+
+            <!-- Existing Negotiated Offer Section -->
+            <TextView
+                android:id="@+id/initialPriceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initial Price: "
+                android:background="@drawable/background_textview"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/initialQuantityView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initial Quantity: "
+                android:background="@drawable/background_textview"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/currentStatusView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Status: "
+                android:background="@drawable/background_textview"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:id="@+id/backgroundRegisterNegotiatedPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/background_edittext"
+                    android:elevation="6dp" />
+
+                <EditText
+                    android:id="@+id/negotiatedPriceInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="New Price"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/custom_edittext_box"
+                    android:drawableTint="#948f8f"
+                    android:elevation="7dp"
+                    android:textColorHint="#B9C6D7"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <View
+                    android:id="@+id/backgroundRegisterNegotiatedQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/background_edittext"
+                    android:elevation="6dp" />
+
+                <EditText
+                    android:id="@+id/negotiatedQuantityInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="New Quantity"
+                    android:inputType="number"
+                    android:background="@drawable/custom_edittext_box"
+                    android:drawableTint="#948f8f"
+                    android:elevation="7dp"
+                    android:textColorHint="#B9C6D7"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/updateStatusButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="negotiate"/>
+
+                <Button
+                    android:id="@+id/addToCartButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

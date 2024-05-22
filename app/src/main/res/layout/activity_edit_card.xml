@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9EDF6"
+    tools:context=".EditCardActivity">
+    <include layout="@layout/layout_appbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <View
+            android:id="@+id/backgroundRegisterStreet"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/cardNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Credit Card Number"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:maxLength="16"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/backgroundRegisterCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/cardNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Card Holder Namd"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:inputType="textCapCharacters"
+            android:maxLength="40"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/backgroundRegisterExpiration"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/expirationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:hint="End Date MM/YY"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:maxLength="4"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/backgroundRegisterCVV"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/cvvEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:hint="CVV"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:maxLength="3"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button_2"
+            android:elevation="10dp"
+            android:text="Save Card"
+            android:textAllCaps="false"
+            android:textColor="#dc8c44"
+            android:textSize="17sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

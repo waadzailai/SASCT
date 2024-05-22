@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:foregroundGravity="center"
+        android:background="@drawable/custom_edittext_box"
+        android:layout_margin="25dp"
+        android:clipChildren="true"
+        android:clipToOutline="true"
+        android:outlineProvider="background">
+
+        <!-- Content TextView "Address" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                tools:ignore="NotSibling"/>
+        </LinearLayout>
+
+        <!-- Icon container at bottom right -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Text "Name" above imageVisa -->
+            <TextView
+                android:id="@+id/cardNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_above="@id/imageVisa"
+                android:text="Name"
+                android:textStyle="bold"/>
+
+            <!-- Text "10/04" above baseline_delete_forever_24 -->
+            <TextView
+                android:id="@+id/expirationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignEnd="@id/removeCardButton"
+                android:layout_above="@id/removeCardButton"
+                android:text="10/04"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"/>
+
+            <!-- First icon (delete_forever_24) -->
+            <ImageView
+                android:id="@+id/removeCardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/custom_background"
+                android:src="@drawable/baseline_delete_forever_24" />
+
+            <!-- Second icon (edit_24) -->
+            <ImageView
+                android:id="@+id/editCardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/removeCardButton"
+                android:layout_alignBottom="@id/removeCardButton"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/custom_background"
+                android:src="@drawable/baseline_edit_24" />
+
+            <!-- TextView (1234-5678-9012-3456) -->
+            <TextView
+                android:id="@+id/cardNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="35dp"
+                android:text="1234-5678-9012-3456"
+                android:textSize="27dp"
+                tools:ignore="TextSizeCheck" />
+
+            <!-- Third icon (done_24) -->
+            <ImageView
+                android:id="@+id/selectedTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/custom_background"
+                android:backgroundTint="#008000"
+                android:src="@drawable/baseline_done_24" />
+
+            <!-- New icon (imageVisa) -->
+            <ImageView
+                android:id="@+id/imageVisa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/image_visa" />
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+</LinearLayout>

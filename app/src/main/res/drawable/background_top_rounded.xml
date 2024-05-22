@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <bitmap
+            android:src="@drawable/image_edit_profil"
+            android:gravity="fill"/>
+    </item>
+
+    <item android:top="130dp">
+        <shape>
+            <solid android:color="#e9edf6"/>
+            <corners android:topLeftRadius="26dp" android:topRightRadius="26dp"/>
+        </shape>
+    </item>
+</layer-list>

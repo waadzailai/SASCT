@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.createOffer.CreateOfferFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9EDF6">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#e9edf6"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/backgroundForSearch"
+                android:layout_width="301dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_edittext"
+                android:elevation="6dp" />
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_edittext_box"
+                android:drawableEnd="@drawable/search"
+                android:drawableTint="#948f8f"
+                android:elevation="7dp"
+                android:hint="Search by title or description"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionSearch"
+                android:textColorHint="#B9C6D7"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14dp"
+                android:background="@null"
+                android:src="@drawable/setting" />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/offerRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#e9edf6"
+            android:clipToPadding="false"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+            app:spanCount="2" />
+
+        <ImageButton
+            android:id="@+id/addOfferButton"
+            android:layout_width="65dp"
+            android:layout_height="62dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/baseline_add_box_24"
+            android:backgroundTint="@color/material_dynamic_neutral_variant30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--   Show the Offers here throught the offer_item structure     -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

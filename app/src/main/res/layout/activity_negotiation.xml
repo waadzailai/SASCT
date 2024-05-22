@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ecf5"
+    tools:context=".NegotiationActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_appbar" />
+
+            <FrameLayout
+                android:layout_width="304dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:clipToPadding="false"
+                android:elevation="8dp"
+                android:padding="10dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center"
+                android:background="@drawable/custom_edittext_box"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="20dp"
+                android:outlineProvider="background"
+                android:backgroundTint="#d0d9e4">
+
+                <!-- TextView for the original text -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This negotiation request will be sent to the supplier. If the negotiation request is approved by the supplier, a new chat will be available in the Chats section. Please check it ."
+                    android:textColor="#154278"
+                    android:maxLines="6"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="5dp"
+                    android:textAlignment="viewStart"
+                    android:gravity="center_horizontal"
+                    tools:ignore="RtlCompat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="190dp"
+                    android:orientation="horizontal">
+
+                    <!-- First TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="specify the price "
+                        android:textColor="#154278"
+                        android:textSize="16dp" />
+
+                    <!-- Second TextView -->
+                    <EditText
+                        android:id="@+id/specifyPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/custom_edittext_background"
+                        android:fontFamily="sans-serif"
+                        android:lineSpacingExtra="5dp"
+                        android:textAlignment="center"
+                        android:text="-"
+                        android:textColor="#154278"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <!-- Second Pair of TextViews -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="250dp"
+                    android:orientation="horizontal">
+
+                    <!-- First TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:fontFamily="sans-serif"
+                        android:text="And quantity"
+                        android:textColor="#154278"
+                        android:textSize="16dp" />
+
+                    <!-- Second TextView -->
+                    <EditText
+                        android:id="@+id/quantityNegotiation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/custom_edittext_background"
+                        android:fontFamily="sans-serif"
+                        android:lineSpacingExtra="5dp"
+                        android:textAlignment="center"
+                        android:text="-"
+                        android:textColor="#154278"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <!-- Add two buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:layout_marginEnd="45dp"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/btnSendNegotiation"
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send"
+                        android:backgroundTint="@color/white"
+                        android:textColor="#dc8c44"/>
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

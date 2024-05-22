@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9EDF6"
+    tools:context=".EditAddressActivity">
+    <include layout="@layout/layout_appbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <View
+            android:id="@+id/backgroundRegisterStreet"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/streetEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:hint="Street"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <View
+            android:id="@+id/backgroundRegisterCity"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:hint="City"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <View
+            android:id="@+id/backgroundRegisterState"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/stateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:hint="State"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <View
+            android:id="@+id/backgroundRegisterPostalCode"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/postalCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:hint="Postal Code"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <View
+            android:id="@+id/backgroundRegisterCountry"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/countryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:hint="Country"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/backgroundRegisterAdditionalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/background_edittext"
+            android:elevation="6dp" />
+
+        <EditText
+            android:id="@+id/additionalInfoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext_box"
+            android:drawableTint="#948f8f"
+            android:elevation="7dp"
+            android:hint="Additional Info"
+            android:textColorHint="#B9C6D7"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button_2"
+            android:elevation="10dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#dc8c44"
+            android:textSize="17sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+</LinearLayout>

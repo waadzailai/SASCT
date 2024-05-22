@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1002786556839",
+    "firebase_url": "https://sasct-87a73-default-rtdb.firebaseio.com",
+    "project_id": "sasct-87a73",
+    "storage_bucket": "sasct-87a73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002786556839:android:293667e9ab5c76e0240482",
+        "android_client_info": {
+          "package_name": "com.example.sasct"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAfOunVSld-9M-hPfUUS5tQvfoOIzQiRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

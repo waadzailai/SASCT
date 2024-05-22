@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SASCT"
+        tools:targetApi="31">
+
+        <!-- Add your Google Maps API key here -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDn6EXg5sjfbADdnA1shXtxHfkH4CmTl2I"/>
+
+        <!--    Auth Classes    -->
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--   Activities and Layouts     -->
+        <activity
+            android:name=".AddressActivity"
+            android:exported="false"
+            android:label="Address" />
+        <activity
+            android:name=".BuyerHomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_buyer_home" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false"
+            android:label="@string/title_activity_buyer_home" />
+        <activity
+            android:name=".CreateOfferActivity"
+            android:exported="false"
+            android:label="@string/title_activity_buyer_home" />
+        <activity
+            android:name=".EditAddressActivity"
+            android:exported="false"
+            android:label="@string/title_activity_buyer_home" />
+        <activity
+            android:name=".EditCardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_buyer_home" />
+        <activity
+            android:name=".EditOfferActivity"
+            android:exported="false"
+            android:label="@string/title_activity_buyer_home" />
+        <activity
+            android:name=".NegotiationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OfferResponseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OfferResponseBuyerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfilEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShippingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SittingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SupplierHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThanksActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TrackingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewOfferActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewOfferBuyerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewOfferSupplierActivity"
+            android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,13 @@
+<!-- background_EditText.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#e9ecf3" />
+            <corners android:radius="10dp" />
+            <padding android:left="8dp"
+                android:top="0dp"
+                android:right="8dp"
+                android:bottom="0dp"/>
+        </shape>
+    </item>
+</selector>

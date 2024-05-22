@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#e9ecf3" /> <!-- لون الخلفية -->
+            <corners android:radius="10dp" /> <!-- نصف قطر الزاوية -->
+
+            <padding
+                android:left="8dp"
+                android:top="8dp"
+                android:right="8dp"
+                android:bottom="8dp" /> <!-- التباعد الداخلي -->
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/rounded_family_home_24"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/rounded_dashboard_24"
+        android:title="@string/title_categories" />
+
+    <!-- Supplier-specific item -->
+    <item
+        android:id="@+id/navigation_create_offer"
+        android:icon="@drawable/rounded_add_business_24"
+        android:title="@string/title_my_offers"
+        android:visible="false" /> <!-- Initially hidden -->
+
+    <!-- Buyer-specific item -->
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/rounded_garden_cart_24"
+        android:title="@string/title_cart"/> <!-- Initially hidden -->
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/rounded_chat_bubble_24"
+        android:title="@string/title_negotiations" />
+</menu>

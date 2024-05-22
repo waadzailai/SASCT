@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ecf5"
+    tools:context=".CreateOfferActivity">
+
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E9EDF6"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_appbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Existing FrameLayout -->
+            <FrameLayout
+                android:layout_width="335dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:elevation="8dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:foregroundGravity="center"
+                android:background="@drawable/custom_edittext_box"
+                android:layout_margin="15dp"
+                android:clipChildren="true"
+                android:clipToOutline="true"
+                android:outlineProvider="background">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/icon_left1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_profil"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true" />
+
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company Name"
+                        android:textColor="#154278"
+                        android:textStyle="bold"
+                        android:layout_toEndOf="@id/icon_left1"
+                        android:layout_centerVertical="true" />
+
+
+                    <ImageButton
+                        android:id="@+id/icon_button_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_arrow_forward_ios_24"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!-- Navigation Bar -->
+
+</RelativeLayout>

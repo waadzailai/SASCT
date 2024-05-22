@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="346dp"
+        android:layout_height="124dp"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:foregroundGravity="center"
+        android:background="@drawable/custom_edittext_box"
+        android:layout_margin="10dp"
+        android:clipChildren="true"
+        android:clipToOutline="true"
+        android:outlineProvider="background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/SubAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your address goes here."
+                android:textSize="12dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+        <!-- Icon container at bottom right -->
+        <RelativeLayout
+            android:layout_width="326dp"
+            android:layout_height="115dp"
+            android:padding="5dp">
+
+            <!-- First icon -->
+            <ImageView
+                android:id="@+id/RemoveAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/custom_background"
+                android:src="@drawable/baseline_delete_forever_24" />
+
+            <!-- Second icon -->
+            <ImageView
+                android:id="@+id/EditAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="46dp"
+                android:background="@drawable/custom_background"
+                android:src="@drawable/baseline_edit_24" />
+
+            <!-- New icon -->
+            <ImageView
+                android:id="@+id/ChooseAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/custom_background"
+                android:backgroundTint="#008000"
+                android:src="@drawable/baseline_done_24" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<resources>
+    <!-- App Title-->
+    <string name="app_name">SASCT</string>
+    <!--    Button Navigation Titles:-->
+    <string name="title_home">Home</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_negotiations">Negotiations</string>
+    <string name="title_my_offers">My Offers</string>
+    <string name="title_cart">Cart</string>
+    <!--    Activities and Fragments Titles:-->
+    <string name="title_activity_buyer_home">BuyerHomeActivity</string>
+    <string name="title_activity_supplier_home">SupplierHomeActivity</string>
+    <string name="title_activity_update_offer">UpdateOfferActivity</string>
+    <string name="title_activity_order">My Orders</string>
+    <string name="title_activity_sittings">Sittings</string>
+    <string name="title_activity_address">Fill Address</string>title_activity_add_address
+    <string name="title_activity_payment">Fill Payment</string>
+    <string name="title_activity_add_address">Add/Edit Address</string>
+    <string name="title_activity_add_payment">Add/Edit Payment</string>
+    <string name="title_fragment_negotiations">Negotiations</string>
+    <string name="title_fragment_cart">My Cart</string>
+    <string name="title_activity_profile">Edit profile</string>
+    <string name="create_offer">Create Offer</string>
+    <string name="title_activity_view_offer">Offer Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+
+    <!-- Countries: Drop Down Values-->
+    <string-array name="countries_array">
+        <item>Saudi Arabia</item>
+        <item>United States</item>
+        <item>United Kingdom</item>
+        <item>Canada</item>
+        <item>Germany</item>
+        <item>France</item>
+    </string-array>
+
+    <!-- Categories: Drop Down Values-->
+    <string-array name="categories_array">
+        <item>Select Category</item>
+        <item>Fruits and Vegetables</item>
+        <item>Dairy and Eggs Products</item>
+        <item>Meat  and Poultry</item>
+    </string-array>
+
+    <!-- Languages: Drop Down Values-->
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Arabic</item>
+        <item>Français</item>
+        <item>Spain</item>
+        <item>Germany</item>
+        <item>Indian</item>
+    </string-array>
+
+    <!-- Shipment: Drop Down Values-->
+    <string-array name="shipment_array">
+        <item>Select Shipment</item>
+        <item>Land</item>
+        <item>Air</item>
+        <item>Sea</item>
+    </string-array>
+
+    <!-- Titles associated with dynamic variables-->
+    <string name="initial_price">Initial Price: %.2f</string>
+    <string name="initial_quantity">Initial Quantity: %d</string>
+    <string name="current_status">Current Status: %s</string>
+    <string name="offer_title">Title: %s</string>
+    <string name="offer_description">Description: %s</string>
+    <string name="offer_category">Category: %s</string>
+    <string name="offer_shipment">Shipment: %s</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="description">%s</string>
+    <string name="difficulty">%s</string>
+    <string name="back_button_description">Back Button</string>
+    <string name="title_activity_create_offer">Create Offer</string>
+    <string name="title_activity_edit_offer">Edit Offer</string>
+    <string name="title_activity_negotitiate_offer">Negotitation</string>
+    <string name="title_activity_tracking">Track Your Order</string>
+    <string name="title_activity_buyer_offer_response">Negotiation Details</string>
+</resources>
+
+
+
